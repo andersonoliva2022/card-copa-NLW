@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
+    background: linear-gradient(45deg, rgba(12, 36, 4, 1) 4%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo{
+    justify-content: center;
+    display: flex;
+    padding-top: 70px;
+}
+
+.card {
+    background-image: url(./assets/blue.svg);
+    background-repeat: no-repeat;
+    height: 503px;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    align-items: center;
+    user-select: none;
+
+    opacity: 0.3;
+    animation: anime .5s forwards;
+    transform: translateY(120px);
+
+   
+}
+
+
+.avatar {
+    height: 150px;
+    width: 150px;
+
+    border-radius: 50%;
+    border: 4px solid #F7DD43;
+    z-index: 1;
+    margin-top: 145px;
+    margin-bottom: 97px;
+    cursor: pointer;
+    
+}
+
+.info {
+    color: #FFFFFF;
+}
+
+.info h1 {
+    height: 25px;
+    width: 210px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+}
+
+.info p {
+    height: 22px;
+    width: 210px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+@keyframes anime {
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
